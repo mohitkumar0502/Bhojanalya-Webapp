@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bhojnalya</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <!-- <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i><img src="img/logo2.png" alt=""></h1> -->
+                    <img src="img/logo2.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        
+                    
+                   <div class="btn-group py-2 px-4" >
+                        <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="user">
+                         </button>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item btn btn-warning" href="#" id="signout">SignOut</a></li>
+                       </ul>
+                    </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-0">
+                <div class="container my-5 py-5">
+                    <div>
+                        <h1 class="display-3 text-white animated slideInLeft text-center" id="heading" ></h1>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class=" pt-3">
+                            <div class="p-4">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#breakfast"><img src="img/breakfast.png" alt="" width="100%"></a>
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-coffee fa-2x text-primary ms-5 ps-4"></i>
+                                    <div class="ps-3 ">
+                                        <span class="text-body ps-1 text-white">Popular</span>
+                                        <h4 class="text-center text-white">Breakfast</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="breakfast" tabindex="-1" aria-labelledby="breakfast"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="breakfast">Breakfast</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="d-flex mt-3 " id="menu1">
+                                        <div class="row">
+                                            <input type="Text" class="form-control mb-2"
+                                                placeholder="Menu" id="bmenu" required>
+                                            <input type="Text" class="form-control mb-2"
+                                                placeholder="Price" id="bprice" required>
+    
+                                        </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="pt-3">
+                            <div class="p-4">
+                                <a href=""data-bs-toggle="modal" data-bs-target="#lunch"><img src="img/lunch.png" alt="" width="100%"></a>
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-hamburger fa-2x text-primary ms-5 ps-4"></i>
+                                    <div class="ps-3 ">
+                                        <span class="text-body ps-1 text-white">Special</span>
+                                        <h4 class="text-center text-white">Lunch</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="lunch" tabindex="-1" aria-labelledby="lunch"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="lunch">Lunch</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="d-flex mt-3 " id="menu2">
+                                        <div class="row">
+                                            <input type="Text" class="form-control mb-2"
+                                                placeholder="Menu" id="lmenu" required>
+                                            <input type="Text" class="form-control mb-2"
+                                                placeholder="Price" id="lprice" required>
+    
+                                        </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="pt-3">
+                            <div class="p-4">
+                                <a href=""data-bs-toggle="modal" data-bs-target="#dinner"><img src="img/hero.png" alt="" width="100%"></a>
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-utensils fa-2x text-primary ms-5 ps-4"></i>
+                                    <div class="ps-3 ">
+                                        <span class="text-body ps-1 text-white">Lovely</span>
+                                        <h4 class="text-center text-white">Dinner</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="dinner" tabindex="-1" aria-labelledby="dinner"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="dinner">Dinner</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="d-flex mt-3 " id="menu3">
+                                        <div class="row">
+                                            <input type="Text" class="form-control mb-2"
+                                                placeholder="Menu" id="dmenu" required>
+                                            <input type="Text" class="form-control mb-2"
+                                                placeholder="Price" id="dprice" required>
+    
+                                        </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- person to eat -->
+         <br><br><br>
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h5 class="section-title ff-secondary text-center text-primary fw-normal">Customers</h5>
+                <h1 class="mb-5">Arriving Customers</h1>
+            </div>
+            <div class="card-group">
+            <div class="card">
+              <img src="img/breakfast.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Breakfast</h5>
+                <h1 id="bb" class="text-center text-primary"></h1>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/lunch.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Lunch</h5>
+                <h1 id="ll" class="text-center text-primary"></h1>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/hero.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Dinner</h5>
+                <h1 id="dd" class="text-center text-primary"></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- person to eat End -->
+
+
+        <!-- Team Start -->
+        <div class="container-xxl pt-5 pb-3">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Team Members</h5>
+                    <h1 class="mb-5">Our Founders</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/team-1.jpg" alt="">
+                            </div>
+                            <h5 class="mb-0">Umang Varshney</h5>
+                            <small>Co-Founder</small>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/team-2.jpg" alt="">
+                            </div>
+                            <h5 class="mb-0">Mohit Singh</h5>
+                            <small>Co-Founder</small>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/team-3.jpg" alt="">
+                            </div>
+                            <h5 class="mb-0">Vidushi Gupta</h5>
+                            <small>Co-Founder</small>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/team-4.jpg" alt="">
+                            </div>
+                            <h5 class="mb-0">Shantanu Sharma</h5>
+                            <small>Co-Founder</small>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="">Reservation</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Knit, Sultanpur, </p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>bhojnalya@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+                        <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                        <p>09AM - 09PM</p>
+                        <h5 class="text-light fw-normal">Sunday</h5>
+                        <p>10AM - 08PM</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
+                        <p></p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Your email">
+                            <button type="button"
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Bhojnalya</a>, All Right Reserved.
+
+                           
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+   
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+        import { getDatabase, set, ref, get, child} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js";
+     
+
+        let UserCreds= JSON.parse(sessionStorage.getItem("user-creds"));
+        let UserInfo= JSON.parse(sessionStorage.getItem("user-info"));
+
+        let UserHead = document.getElementById('user');
+        let UserHeading = document.getElementById('heading');
+        let SignoutBtn = document.getElementById('signout');
+        let Bno = document.getElementById('bb');
+        let Lno = document.getElementById('ll');
+        let Dno = document.getElementById('dd');
+        
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyCiksOF1b-0znqabXV-zqoC5CN0yh_PH4k",
+            authDomain: "bhojnalya-ba7d5.firebaseapp.com",
+            projectId: "bhojnalya-ba7d5",
+            storageBucket: "bhojnalya-ba7d5.appspot.com",
+            messagingSenderId: "946134595691",
+            appId: "1:946134595691:web:a1b6b5ed8b40a7a557192e",
+            measurementId: "G-PZN6PN5QMM"
+          };
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase();
+        const dbref = ref(db);
+         
+        let Rname = UserInfo.name;
+        let Rid = UserCreds.uid;
+        let Bmenu = document.getElementById('bmenu');
+        let Bprice = document.getElementById('bprice');
+        let Lmenu = document.getElementById('lmenu');
+        let Lprice = document.getElementById('lprice');
+        let Dmenu = document.getElementById('dmenu');
+        let Dprice = document.getElementById('dprice');
+        
+
+        let Signout=()=>{
+            sessionStorage.removeItem("user-creds");
+            sessionStorage.removeItem("user-info");
+            window.location.href='partner-with-us.html';
+        }
+
+        let CheckCred=()=>{
+            if(!sessionStorage.getItem("user-creds"))
+              window.location.href='partner-with-us.html'; 
+            else{
+              UserHead.innerText=(UserInfo.name);
+              UserHeading.innerText=(UserInfo.name);
+              get(child(dbref, 'BreakfastMenu')).then((menus) => {
+                menus.forEach((menu) => {
+                    if(menu.key===Rid){
+                        Bno.innerHTML=menu.val().bno;
+                    }
+                });
+            });
+            get(child(dbref, 'LunchMenu')).then((menus) => {
+                menus.forEach((menu) => {
+                    if(menu.key===Rid){
+                        Lno.innerHTML=menu.val().lno;
+                    }
+                });
+            });
+            get(child(dbref, 'DinnerMenu')).then((menus) => {
+                menus.forEach((menu) => {
+                    if(menu.key===Rid){
+                        Dno.innerHTML=menu.val().dno;
+                    }
+                });
+            });
+            }  
+        }
+        
+        function AddBreakfast(){
+            set(ref(db,'BreakfastMenu/' + Rid),{
+                menu:Bmenu.value,
+                price:Bprice.value,
+                name:Rname,
+                bno:0
+            })
+            .then(()=>{
+                alert("Menu Added Successfully");
+            })
+            .catch((error)=>{
+                alert("Unsuccessfull");
+                console.log(error);
+            })
+        }
+
+        function AddLunch(){
+            set(ref(db,'LunchMenu/' + Rid),{
+                menu:Lmenu.value,
+                price:Lprice.value,
+                name:Rname,
+                lno:0
+            })
+            .then(()=>{
+                alert("Menu Added Successfully");
+            })
+            .catch((error)=>{
+                alert("Unsuccessfull");
+                console.log(error);
+            })
+        }
+
+        function AddDinner(){
+            set(ref(db,'DinnerMenu/' + Rid),{
+                menu:Dmenu.value,
+                price:Dprice.value,
+                name:Rname,
+                dno:0
+            })
+            .then(()=>{
+                alert("Menu Added Successfully");
+            })
+            .catch((error)=>{
+                alert("Unsuccessfull");
+                console.log(error);
+            })
+        }
+
+        menu1.addEventListener('submit',AddBreakfast);
+        menu2.addEventListener('submit',AddLunch);
+        menu3.addEventListener('submit',AddDinner);
+        window.addEventListener('load',CheckCred);
+        SignoutBtn.addEventListener('click',Signout);
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
